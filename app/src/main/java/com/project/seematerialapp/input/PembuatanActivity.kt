@@ -28,21 +28,24 @@ class PembuatanActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var total : Double
-        var tenaga_terampil = binding.tenagaTerampil.text.toString().toDouble()
-        var tenaga_tidak_terampil = binding.tenagaTidakTerampil.text.toString().toDouble()
-        var besi6 = binding.besiDia6.text.toString().toDouble()
-        var besi10 = binding.besiDia10.text.toString().toDouble()
-        var pasir = binding.pasir.text.toString().toDouble()
-        var semen = binding.semen.text.toString().toDouble()
-        var kerikil = binding.kerikil.text.toString().toDouble()
-        var air = binding.air.text.toString().toDouble()
-        var kawat = binding.kawat.text.toString().toDouble()
-        var abu_sekam = binding.abuSekam.text.toString().toDouble()
-        var investasi = binding.investasi.text.toString().toDouble()
 
-        // Proses
+
         binding.btnHitung.setOnClickListener {
+            // Ambil Data
+            var total : Double
+            var tenaga_terampil = binding.tenagaTerampil.text.toString().toDouble()
+            var tenaga_tidak_terampil = binding.tenagaTidakTerampil.text.toString().toDouble()
+            var besi6 = binding.besiDia6.text.toString().toDouble()
+            var besi10 = binding.besiDia10.text.toString().toDouble()
+            var pasir = binding.pasir.text.toString().toDouble()
+            var semen = binding.semen.text.toString().toDouble()
+            var kerikil = binding.kerikil.text.toString().toDouble()
+            var air = binding.air.text.toString().toDouble()
+            var kawat = binding.kawat.text.toString().toDouble()
+            var abu_sekam = binding.abuSekam.text.toString().toDouble()
+            var investasi = binding.investasi.text.toString().toDouble()
+
+            // Proses
             tenaga_terampil = tenaga_terampil  * 0.285
             tenaga_tidak_terampil = tenaga_tidak_terampil * 0.393
             besi6 = besi6 * 1.52
@@ -72,14 +75,11 @@ class PembuatanActivity : AppCompatActivity() {
             val intent = Intent(this, ResultPembuatanActivity::class.java)
             intent.putExtra("total", total.toString())
             startActivity(intent)
+            finish()
         }
 
         binding.btnBack.setOnClickListener {
             onBackPressed()
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
     }
 }

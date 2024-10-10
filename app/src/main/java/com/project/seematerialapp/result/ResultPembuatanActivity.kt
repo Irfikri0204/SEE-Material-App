@@ -1,5 +1,6 @@
 package com.project.seematerialapp.result
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.project.seematerialapp.R
 import com.project.seematerialapp.databinding.ActivityResultPembuatanBinding
+import com.project.seematerialapp.input.PembuatanActivity
 
 class ResultPembuatanActivity : AppCompatActivity() {
     private lateinit var binding : ActivityResultPembuatanBinding
@@ -23,7 +25,15 @@ class ResultPembuatanActivity : AppCompatActivity() {
         binding.tvTotal.setText(intent.getStringExtra("total"))
         binding.btnBack.setOnClickListener {
             onBackPressed()
-            finish()
         }
+
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this,PembuatanActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
