@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".result.ResultPembuatanActivity">
+    tools:context=".result.ResultPemasanganActivity">
     <LinearLayout
         android:padding="18dp"
         android:background="@color/hijau"
@@ -39,7 +39,7 @@
             android:textAlignment="center"
             android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:text="Total Biaya Pembuatan Beton Precast"
+            android:text="Total Biaya Pemasangan Beton Precast Per 6 m"
             android:textColor="@color/black"/>
         <TextView
             android:layout_width="match_parent"
@@ -50,27 +50,26 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:text="Rp. 10.000,00"/>
-        <LinearLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginVertical="30dp"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hitung Lagi"
-                android:id="@+id/btn_hitung"
-                android:backgroundTint="@color/hijau"
-                android:layout_marginEnd="5dp"/>
-            <Button
-                android:layout_marginStart="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_home"
-                android:text="Menu Utama"
-                android:backgroundTint="@color/hijau"/>
-        </LinearLayout>
-
+            android:text="Hitung Lagi"
+            android:id="@+id/btn_hitung"
+            android:backgroundTint="@color/hijau"
+            android:layout_marginEnd="5dp"/>
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Utama"
+            android:id="@+id/btn_home"
+            android:backgroundTint="@color/hijau"/>
+    </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

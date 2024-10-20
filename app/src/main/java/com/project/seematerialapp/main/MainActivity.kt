@@ -6,8 +6,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.project.seematerialapp.PrecastActivity
 import com.project.seematerialapp.R
 import com.project.seematerialapp.databinding.ActivityMainBinding
+import com.project.seematerialapp.input.PemasanganActivity
 import com.project.seematerialapp.input.PembuatanActivity
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +26,14 @@ class MainActivity : AppCompatActivity() {
         }
         binding.cardPembuatan.setOnClickListener {
             val intent = Intent(this, PembuatanActivity::class.java)
+            startActivity(intent)
+        }
+        binding.cardPemasangan.setOnClickListener {
+            val intent = Intent(this, PemasanganActivity::class.java)
+            startActivity(intent)
+        }
+        binding.cardPrecast.setOnClickListener {
+            val intent = Intent(this, PrecastActivity::class.java)
             startActivity(intent)
         }
     }

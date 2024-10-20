@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".PrecastActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:padding="18dp"
+        android:background="@color/hijau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/up_content">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_marginStart="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Sloof Precast Green Concrete"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:padding="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sloof pracetak green concrete adalah inovasi bahan bangunan yang ramah lingkungan dan ekonomis.
+\n\nSloof ini berukuran 15 x 20 x 60 cm diperkuat dengan 4 batang besi diameter 10 mm dan begel diameter 6 cm."
+            android:paddingHorizontal="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\nKonsep green concrete diterpakan pada sloof pracetak ditandai dengan penggunaan abu sekam padi sebagai bahan pengganti sebagian semen Portland"
+            android:paddingHorizontal="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:text="\nSloof precast green concrete dapat dibuat oleh tenaga ahli konstruksi dengan mudah karena bahan pembentuknya tersedia secara umum di pasaran"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:text="\nSloof pracetak green concrete telah melalui proses uji tekan dan memenuhi syarat dalam menghubungkan antara dinding dan pondasi."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:text="\nSistem penyambungan sloof precast green concrete  menggunakan metode penyambungan basah yang disertai dengan stek baja Tulangan yang dipancangkan pada pondasi batu kali."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:text="\nSloof precast green concrete memiliki kekuatan yang tinggi serta tahan terhadap serangan  kondisi lingkungan"/>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

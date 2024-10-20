@@ -13,13 +13,28 @@
         android:theme="@style/Theme.SeeMaterialApp"
         tools:targetApi="31">
         <activity
+            android:name=".PrecastActivity"
+            android:configChanges="uiMode"
+            android:exported="false" />
+        <activity
+            android:name=".result.ResultPemasanganActivity"
+            android:configChanges="uiMode"
+            android:exported="false" />
+        <activity
+            android:name=".input.PemasanganActivity"
+            android:configChanges="uiMode"
+            android:exported="false" />
+        <activity
             android:name=".result.ResultPembuatanActivity"
+            android:configChanges="uiMode"
             android:exported="false" />
         <activity
             android:name=".input.PembuatanActivity"
+            android:configChanges="uiMode"
             android:exported="false" />
         <activity
             android:name=".splashscreen.SplashScreenActivity"
+            android:configChanges="uiMode"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +44,7 @@
         </activity>
         <activity
             android:name=".main.MainActivity"
+            android:configChanges="uiMode"
             android:exported="true" />
     </application>
 
